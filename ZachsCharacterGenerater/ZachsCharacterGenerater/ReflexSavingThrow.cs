@@ -55,8 +55,6 @@ namespace ZachsCharacterGenerater
             {                 
                 return "Error";
             }
-
         }
-
     }
 }

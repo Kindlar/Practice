@@ -37,9 +37,7 @@ public class FortSavingThrows
             int selectedColumn;
             int playerLevel;
             int.TryParse(level, out playerLevel);
-
-            
-            
+                                   
             try
             {
                 selectedRow = (playerLevel-1);
@@ -57,11 +55,7 @@ public class FortSavingThrows
             catch
             {
                 return fort = "Error";
-
-            }
-
-            
+            }                       
         }
-
     }
 }

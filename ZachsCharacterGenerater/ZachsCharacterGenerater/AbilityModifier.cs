@@ -74,7 +74,7 @@ namespace ZachsCharacterGenerater
             else
             {
                 //TODO: work on getting this message to display on the form level with a false statement. 
-                abilityMod = 000;
+                abilityMod = -99;
                 //MessageBox.Show("You cheated or need to reroll!");
                 return abilityMod.ToString("n0");
             }

@@ -72,26 +72,26 @@ namespace ZachsCharacterGenerater
             initMiscModTextBox.Clear();
             
             //clears all display labels
-            strRacialLabel.Text = "";
-            dexRacialLabel.Text = "";
-            conRacialLabel.Text = "";
-            intRacialLabel.Text = "";
-            wisRacialLabel.Text = "";
-            chaRacialLabel.Text = "";
+            strRacialModTextBox.Clear();
+            dexRacialModTextBox.Clear();
+            conRacialModTextBox.Clear();
+            intRacialModTextBox.Clear();
+            wisRacialModTextBox.Clear();
+            chaRacialModTextBox.Clear();
 
-            strScoreLabel.Text = "";
-            dexScoreLabel.Text = "";
-            conScoreLabel.Text = "";
-            intScoreLabel.Text = "";
-            wisScoreLabel.Text = "";
-            chaScoreLabel.Text = "";
+            strScoreTextBox.Clear();
+            dexScoreTextBox.Clear();
+            conScoreTextBox.Clear();
+            intScoreTextBox.Clear();
+            wisScoreTextBox.Clear();
+            chaScoreTextBox.Clear();
 
-            strDisplayLabel.Text = "";
-            dexDisplayLabel.Text = "";
-            conDisplayLabel.Text = "";
-            intDisplayLabel.Text = "";
-            wisDisplayLabel.Text = "";
-            chaDisplayLabel.Text = "";
+            strDisplayTextBox.Clear();
+            dexDisplayTextBox.Clear();
+            conDisplayTextBox.Clear();
+            intDisplayTextBox.Clear();
+            wisDisplayTextBox.Clear();
+            chaDisplayTextBox.Clear();
 
             reflexAbilityModLabel.Text = "";
             fortAbilityModLabel.Text = "";
@@ -106,7 +106,6 @@ namespace ZachsCharacterGenerater
             fortTotalSavingLabel.Text = "";
                      
             //Clears all comboboxes
-           
             raceComboBox.ResetText();
             classComboBox.ResetText();
             alignmentComboBox.ResetText();
@@ -124,39 +123,39 @@ namespace ZachsCharacterGenerater
             int initMiscMod;
             int initTotalMod;
 
-            strScore = TotalScore.CalculateTotalScore(strTextBox.Text, strRacialLabel.Text, strMagicTextBox.Text);
-            strScoreLabel.Text = strScore.ToString("n0");
-            strDisplayLabel.Text = abilityModifier.Calculate(strScore);
-            int.TryParse(strDisplayLabel.Text, out strAbilityMod);
+            strScore = TotalScore.CalculateTotalScore(strTextBox.Text, strRacialModTextBox.Text, strMagicTextBox.Text);
+            strScoreTextBox.Text = strScore.ToString("n0");
+            strDisplayTextBox.Text = abilityModifier.Calculate(strScore);
+            int.TryParse(strDisplayTextBox.Text, out strAbilityMod);
                         
-            dexScore = TotalScore.CalculateTotalScore(dexTextBox.Text, dexRacialLabel.Text, dexMagicTextBox.Text);
-            dexScoreLabel.Text = dexScore.ToString("n0");
-            dexDisplayLabel.Text = abilityModifier.Calculate(dexScore);
-            int.TryParse(dexDisplayLabel.Text, out dexAbilityMod);
+            dexScore = TotalScore.CalculateTotalScore(dexTextBox.Text, dexRacialModTextBox.Text, dexMagicTextBox.Text);
+            dexScoreTextBox.Text = dexScore.ToString("n0");
+            dexDisplayTextBox.Text = abilityModifier.Calculate(dexScore);
+            int.TryParse(dexDisplayTextBox.Text, out dexAbilityMod);
             reflexAbilityModLabel.Text = dexAbilityMod.ToString("n0");
             initDexModTextBox.Text = dexAbilityMod.ToString("n0");
 
-            conScore = TotalScore.CalculateTotalScore(conTextBox.Text, conRacialLabel.Text, conMagicTextBox.Text);
-            conScoreLabel.Text = conScore.ToString("n0");
-            conDisplayLabel.Text = abilityModifier.Calculate(conScore);
-            int.TryParse(conDisplayLabel.Text, out conAbilityMod);
+            conScore = TotalScore.CalculateTotalScore(conTextBox.Text, conRacialModTextBox.Text, conMagicTextBox.Text);
+            conScoreTextBox.Text = conScore.ToString("n0");
+            conDisplayTextBox.Text = abilityModifier.Calculate(conScore);
+            int.TryParse(conDisplayTextBox.Text, out conAbilityMod);
             fortAbilityModLabel.Text = conAbilityMod.ToString("n0");
 
-            intScore = TotalScore.CalculateTotalScore(intTextBox.Text, intRacialLabel.Text, intMagicTextBox.Text);
-            intScoreLabel.Text = intScore.ToString("n0");
-            intDisplayLabel.Text = abilityModifier.Calculate(intScore);
-            int.TryParse(intDisplayLabel.Text, out intAblilitMod);
+            intScore = TotalScore.CalculateTotalScore(intTextBox.Text, intRacialModTextBox.Text, intMagicTextBox.Text);
+            intScoreTextBox.Text = intScore.ToString("n0");
+            intDisplayTextBox.Text = abilityModifier.Calculate(intScore);
+            int.TryParse(intDisplayTextBox.Text, out intAblilitMod);
 
-            wisScore = TotalScore.CalculateTotalScore(wisTextBox.Text, wisRacialLabel.Text, wisMagicTextBox.Text);
-            wisScoreLabel.Text = wisScore.ToString("n0");
-            wisDisplayLabel.Text = abilityModifier.Calculate(wisScore);
-            int.TryParse(wisDisplayLabel.Text, out wisAbilityMod);
+            wisScore = TotalScore.CalculateTotalScore(wisTextBox.Text, wisRacialModTextBox.Text, wisMagicTextBox.Text);
+            wisScoreTextBox.Text = wisScore.ToString("n0");
+            wisDisplayTextBox.Text = abilityModifier.Calculate(wisScore);
+            int.TryParse(wisDisplayTextBox.Text, out wisAbilityMod);
             willAbilityModLabel.Text = wisAbilityMod.ToString("n0");
 
-            chaScore = TotalScore.CalculateTotalScore(chaTextBox.Text, chaRacialLabel.Text, chaMagicTextBox.Text);
-            chaScoreLabel.Text = chaScore.ToString("n0");
-            chaDisplayLabel.Text = abilityModifier.Calculate(chaScore);
-            int.TryParse(chaDisplayLabel.Text, out chaAbilityMod);
+            chaScore = TotalScore.CalculateTotalScore(chaTextBox.Text, chaRacialModTextBox.Text, chaMagicTextBox.Text);
+            chaScoreTextBox.Text = chaScore.ToString("n0");
+            chaDisplayTextBox.Text = abilityModifier.Calculate(chaScore);
+            int.TryParse(chaDisplayTextBox.Text, out chaAbilityMod);
 
             {
                 int.TryParse(initDexModTextBox.Text, out initDexMod);
@@ -174,75 +173,75 @@ namespace ZachsCharacterGenerater
                                              
             if (selected == "Elf")
             {
-                strRacialLabel.Text = "0";
-                dexRacialLabel.Text = "+2";
-                conRacialLabel.Text = "-2";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "0";
+                strRacialModTextBox.Text = "0";
+                dexRacialModTextBox.Text = "+2";
+                conRacialModTextBox.Text = "-2";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "0";
             }
             else if(selected == "Human")
             {
-                strRacialLabel.Text = "0";
-                dexRacialLabel.Text = "0";
-                conRacialLabel.Text = "0";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "0";
+                strRacialModTextBox.Text = "0";
+                dexRacialModTextBox.Text = "0";
+                conRacialModTextBox.Text = "0";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "0";
             }
             else if (selected == "Dwarf")
             {
-                strRacialLabel.Text = "0";
-                dexRacialLabel.Text = "0";
-                conRacialLabel.Text = "+2";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "-2";
+                strRacialModTextBox.Text = "0";
+                dexRacialModTextBox.Text = "0";
+                conRacialModTextBox.Text = "+2";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "-2";
             }
             else if (selected == "Gnome")
             {
-                strRacialLabel.Text = "-2";
-                dexRacialLabel.Text = "0";
-                conRacialLabel.Text = "+2";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "0";
+                strRacialModTextBox.Text = "-2";
+                dexRacialModTextBox.Text = "0";
+                conRacialModTextBox.Text = "+2";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "0";
             }
             else if (selected == "Half-Elf")
             {
-                strRacialLabel.Text = "0";
-                dexRacialLabel.Text = "0";
-                conRacialLabel.Text = "0";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "0";
+                strRacialModTextBox.Text = "0";
+                dexRacialModTextBox.Text = "0";
+                conRacialModTextBox.Text = "0";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "0";
             }
             else if (selected == "Half-Orc")
             {
-                strRacialLabel.Text = "+2";
-                dexRacialLabel.Text = "0";
-                conRacialLabel.Text = "0";
-                intRacialLabel.Text = "-2";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "-2";
+                strRacialModTextBox.Text = "+2";
+                dexRacialModTextBox.Text = "0";
+                conRacialModTextBox.Text = "0";
+                intRacialModTextBox.Text = "-2";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "-2";
             }
             else if (selected == "Halfing")
             {
-                strRacialLabel.Text = "-2";
-                dexRacialLabel.Text = "+2";
-                conRacialLabel.Text = "0";
-                intRacialLabel.Text = "0";
-                wisRacialLabel.Text = "0";
-                chaRacialLabel.Text = "0";
+                strRacialModTextBox.Text = "-2";
+                dexRacialModTextBox.Text = "+2";
+                conRacialModTextBox.Text = "0";
+                intRacialModTextBox.Text = "0";
+                wisRacialModTextBox.Text = "0";
+                chaRacialModTextBox.Text = "0";
             }
             else
             {
-                strRacialLabel.Text = "";
-                dexRacialLabel.Text = "";
-                conRacialLabel.Text = "";
-                intRacialLabel.Text = "";
-                wisRacialLabel.Text = "";
-                chaRacialLabel.Text = "";
+                strRacialModTextBox.Text = "";
+                dexRacialModTextBox.Text = "";
+                conRacialModTextBox.Text = "";
+                intRacialModTextBox.Text = "";
+                wisRacialModTextBox.Text = "";
+                chaRacialModTextBox.Text = "";
             }
          }
 
@@ -272,79 +271,6 @@ namespace ZachsCharacterGenerater
                 willClassModLabel.Text = WillSavingThrow.getWill(level, selected);
             }
 
-            //if(selected == "Barbarian")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "0";
-            //}
-            //else if (selected == "Bard")
-            //{
-            //    //fortClassModlabel.Text = "0";
-            //    //reflexClassModLabel.Text = "2";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else if (selected == "Cleric")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else if (selected == "Druid")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else if (selected == "Fighter")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "0";
-            //}
-            //else if (selected == "Monk")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "2";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else if (selected == "Paladin")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "0";
-            //    alignmentComboBox.Text = "Lawful Good";
-            //}
-            //else if (selected == "Ranger")
-            //{
-            //    fortClassModlabel.Text = "2";
-            //    reflexClassModLabel.Text = "2";
-            //    willClassModLabel.Text = "0";
-            //}
-            //else if (selected == "Rogue")
-            //{
-            //    fortClassModlabel.Text = "0";
-            //    reflexClassModLabel.Text = "2";
-            //    willClassModLabel.Text = "0";
-            //}
-            //else if (selected == "Sorcerer")
-            //{
-            //    fortClassModlabel.Text = "0";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else if (selected == "Wizard")
-            //{
-            //    fortClassModlabel.Text = "0";
-            //    reflexClassModLabel.Text = "0";
-            //    willClassModLabel.Text = "2";
-            //}
-            //else
-            //{
-            //    fortClassModlabel.Text = "";
-            //    reflexClassModLabel.Text = "";
-            //    willClassModLabel.Text = "";
-            //}
         }
         
         private void calculateSavingThrow_Click(object sender, EventArgs e)
@@ -399,6 +325,11 @@ namespace ZachsCharacterGenerater
         }
 
         private void equipmentButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void abilityScoreGroupBox_Enter(object sender, EventArgs e)
         {
 
         }             

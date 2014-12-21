@@ -34,3 +34,15 @@ G:\C# Projects\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCh
 G:\C# Projects\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.skillForm.resources
 G:\C# Projects\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.spellForm.resources
 G:\C# Projects\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.csproj.GenerateResource.Cache
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\bin\Debug\ZachsCharacterGenerater.exe.config
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.exe
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.pdb
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\bin\Debug\ZachsCharacterGenerater.exe
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\bin\Debug\ZachsCharacterGenerater.pdb
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.csprojResolveAssemblyReference.cache
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.characterForm.resources
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.featForm.resources
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.Properties.Resources.resources
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.skillForm.resources
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.spellForm.resources
+C:\Users\Lennorith\Documents\GitHub\Practice\ZachsCharacterGenerater\ZachsCharacterGenerater\obj\Debug\ZachsCharacterGenerater.csproj.GenerateResource.Cache
